@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Debugging</title>
+        <link data-trunk rel="rust" data-type="main" href="Cargo.toml"/>
+    </head>
+    <body>
+        <script>
+            window.testing = {
+                request: (req) => { 
+                    console.log(req.method)
+                }
+            };
+        </script>
+    </body>
+</html>
+
